@@ -1,0 +1,59 @@
+.song_con {
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  background: linear-gradient(rgb(5, 5, 5), rgba(170, 170, 170, .95));
+  z-index: 5;
+  transform: translate3d(0, 100%, 0);
+  transition: transform .2s linear;
+}
+
+.showing {
+  transform: translate3d(0, 0, 0);
+}
+
+.common_style() {
+  height: 12vw;
+  line-height: 12vw;
+  font-size: 16px;
+  color: #fff;
+  border-bottom: 1px solid rgba(255, 255, 255, .1);
+}
+
+.text_center() {
+  text-align: center;
+}
+
+.song_title {
+  .common_style;
+  .text_center;
+}
+
+.song_ul {
+  box-sizing: border-box;
+  padding-left: 3vw;
+}
+
+.song_li {
+  .common_style;
+}
+
+.close {
+  .common_style;
+  .text_center;
+  border-bottom: none;
+}
+
+.active {
+  color: #56b287;
+}
+
+.mask {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 4;
+  background: rgba(0, 0, 0, .6);
+}

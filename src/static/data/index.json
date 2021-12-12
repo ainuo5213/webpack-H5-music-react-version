@@ -1,0 +1,35 @@
+[
+    {
+        "id": 1,
+        "name": "海阔天空",
+        "album": "乐于怒",
+        "singer": "BEYOND",
+        "songUrl": "/static/mp3/song1.mp3",
+        "albumImage": "/static/mp3/song1.png",
+        "lyrics": "/static/mp3/song1.lrc",
+        "duration": 324,
+        "isLike": false
+    },
+    {
+        "id": 2,
+        "name": "半壶纱",
+        "album": "半壶纱",
+        "singer": "刘珂矣",
+        "songUrl": "/static/mp3/song2.mp3",
+        "albumImage": "/static/mp3/song2.png",
+        "lyrics": "/static/mp3/song2.lrc",
+        "duration": 222,
+        "isLike": true
+    },
+    {
+        "id": 3,
+        "name": "苏幕遮",
+        "album": "盛世好风光",
+        "singer": "张晓棠",
+        "songUrl": "/static/mp3/song3.mp3",
+        "albumImage": "/static/mp3/song3.png",
+        "lyrics": "/static/mp3/song3.lrc",
+        "duration": 199,
+        "isLike": false
+    }
+]

@@ -1,0 +1,33 @@
+.song_img_con {
+  width: 70vw;
+  height: 70vw;
+  border-radius: 50%;
+  margin: 0 auto;
+}
+.song_img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+
+@keyframes image-rotate {
+  0% {
+    transform: rotateZ(0deg);
+  }
+
+  100% {
+    transform: rotateZ(360deg);
+  }
+}
+
+.animation {
+  animation: image-rotate linear 10s infinite;
+}
+
+.playing {
+  animation-play-state: running;
+}
+
+.stop {
+  animation-play-state: paused;
+}

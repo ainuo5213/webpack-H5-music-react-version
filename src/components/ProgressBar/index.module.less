@@ -1,0 +1,78 @@
+.progress_con {
+  height: 8vw;
+  display: flex;
+  align-items: center;
+  font-size: 14px;
+  color: #fff;
+  line-height: 8vw;
+  text-align: center;
+}
+
+.padding() {
+  padding: 0 4vw;
+}
+
+.current_time {
+  .padding;
+}
+
+.total_time {
+  .padding
+}
+
+.progress_line {
+  flex: 1 1 0;
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+}
+
+.current_progress_line_con {
+  position: absolute;
+  left: 0vw;
+  width: 100%;
+  height: 100%;
+  transform: translate3d(-100%, 0, 0);
+  z-index: 2;
+}
+
+.dot {
+  position: absolute;
+  top: 50%;
+  right: -2vw;
+  width: 2vw;
+  height: 2vw;
+  border: 2vw solid transparent;
+  background: #fff;
+  background-clip: content-box; /* 背景裁切，默认值是border-box，现在改为content-box，即背景区域显示的范围 */
+  border-radius: 50%;
+  transform: translate3d(0, -50%, 0);
+}
+
+.show {
+  opacity: 1;
+}
+
+.line_common() {
+  width: 100%;
+  position: absolute;
+  height: .6vw;
+  top: 50%;
+}
+
+.current_progress_line {
+  width: 100%;
+  position: absolute;
+  height: .6vw;
+  top: 50%;
+  right: 0;
+  background: #fff;
+  transform: translate3d(0, -50%, 0);
+}
+
+.total_progress_line {
+  .line_common;
+  left: 0;
+  background: rgba(0, 0, 0, .4);
+  transform: translate3d(0, -50%, 0);
+}
